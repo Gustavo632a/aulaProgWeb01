@@ -7,7 +7,7 @@
 }
 
 body { 
-    background-color: rgb(191, 210, 178);
+    background: linear-gradient(to top, rgb(210, 197, 178), rgb(180, 170, 150));
     color: rgb(21, 74, 5);
     font-family: raleway, sans-serif;
     font-weight: 400;
