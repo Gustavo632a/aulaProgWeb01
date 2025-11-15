@@ -5,16 +5,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <title>Seja um voluntario</title>
+    <script src="navbar.js" defer></script>
 </head>
 <body>
     <header>
-        <h1>ONG Vida Selvagem</h1>
-        <nav>
-                <a href="index.html">Inicio</a><br>
-                <a href="projeto.html">Projeto</a><br>
-                <a href="cadastro.html">Cadastro</a><br>
+        <nav class="navbar">
+            <div class="navbar-brand">ONG Vida Selvagem</div>
+            <button class="navbar-toggle" aria-label="Abrir menu">
+                <span class="hamburger"></span>
+            </button>
+            <ul class="navbar-menu">
+                <li><a href="index.html">Inicio</a></li>
+                <li class="has-dropdown">
+                    <a href="projeto.html">Projeto</a>
+                    <ul class="dropdown">
+                        <li><a href="#animais">Animais</a></li>
+                        <li><a href="#voluntarios">Voluntários</a></li>
+                        <li><a href="#doacoes">Doações</a></li>
+                    </ul>
+                </li>
+                <li><a href="cadastro.html">Cadastro</a></li>
+            </ul>
         </nav>
-
     </header>
     <main>
         <!--Quem somos?-->
@@ -31,14 +43,11 @@
         <!--Contato-->
         <section>
             <fieldset>
-                
-            <legend>Informações de contato</legend>
-            <address>
-                <p>Endereço: Rua pocinhos, 35 - Bairro dos Municípios - Cidade Santa Rita/PB</p>
-                <p>Telefone: (83) 99852-4192</p>
-                <p>Email: vidaselvagemlivre@gmail.com
-                </p>
-            </address>
+                <legend>Informações de contato</legend>
+                <address>
+                    <p>Telefone: (83) 99852-4192</p>
+                    <p>Email: vidaselvagemlivre@gmail.com</p>
+                </address>
             </fieldset>
         </section>
     </main>

@@ -4,16 +4,28 @@
         <meta charset="UTF-8">
         <link rel="stylesheet" href="style.css">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="style.css">
         <title>Cadastre-se na ONG</title>
+        <script src="navbar.js" defer></script>
     </head>
     <body>
         <header>
-            <h1>ONG Vida Selvagem</h1>
-        <nav>
-                <a href="index.html">Inicio</a><br>
-                <a href="projeto.html">Projeto</a><br>
-                <a href="cadastro.html">Cadastro</a><br>   
+        <nav class="navbar">
+            <div class="navbar-brand">ONG Vida Selvagem</div>
+            <button class="navbar-toggle" aria-label="Abrir menu">
+                <span class="hamburger"></span>
+            </button>
+            <ul class="navbar-menu">
+                <li><a href="index.html">Inicio</a></li>
+                <li class="has-dropdown">
+                    <a href="projeto.html">Projeto</a>
+                    <ul class="dropdown">
+                        <li><a href="#animais">Animais</a></li>
+                        <li><a href="#voluntarios">Voluntários</a></li>
+                        <li><a href="#doacoes">Doações</a></li>
+                    </ul>
+                </li>
+                <li><a href="cadastro.html">Cadastro</a></li>
+            </ul>
         </nav>
         </header>
         <main>

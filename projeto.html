@@ -5,18 +5,28 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <link rel="stylesheet" href="style.css">
   <title>Projetos</title>
+</head>
   <meta name="description" content="ONG de preservação da vida selvagem e combate ao tráfico de animais. Conheça nossos projetos e como apoiar." />
+  <script src="navbar.js" defer></script>
 </head>
 <body>
   <header>
-    <nav>
-      <div>
-        <h1>ONG Vida Selvagem</h1>
-      </div>
-      <ul>
-        <li><a href="index.html">Início</a></li>
-        <li><a href="projeto.html">Projetos</a></li>
-        <li><a href="cadastro.html">Cadastro</a></li>  
+    <nav class="navbar">
+      <div class="navbar-brand">ONG Vida Selvagem</div>
+      <button class="navbar-toggle" aria-label="Abrir menu">
+        <span class="hamburger"></span>
+      </button>
+      <ul class="navbar-menu">
+        <li><a href="index.html">Inicio</a></li>
+        <li class="has-dropdown">
+          <a href="projeto.html">Projeto</a>
+          <ul class="dropdown">
+            <li><a href="#animais">Animais</a></li>
+            <li><a href="#voluntarios">Voluntários</a></li>
+            <li><a href="#doacoes">Doações</a></li>
+          </ul>
+        </li>
+        <li><a href="cadastro.html">Cadastro</a></li>
       </ul>
     </nav>
   </header>
@@ -79,7 +89,7 @@
       <h5>Sobre a ONG</h5>
       <p>Organização dedicada à preservação da vida selvagem.</p>
     </div>
-    
+
     <div>
     <fieldset>
       <legend>Contato</legend>

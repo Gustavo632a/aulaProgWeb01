@@ -20,6 +20,123 @@ header {
     text-align: center;
 }
 
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: rgb(45, 37, 8);
+    padding: 0.5rem 1.5rem;
+    position: relative;
+    font-family: 'Raleway', sans-serif;
+}
+.navbar-brand {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: rgb(121, 201, 8);
+}
+.navbar-menu {
+    display: flex;
+    list-style: none;
+    gap: 1.2rem;
+    margin: 0;
+    padding: 0;
+}
+.navbar-menu li {
+    position: relative;
+}
+.navbar-menu a {
+    color: rgb(121, 201, 8);
+    text-decoration: none;
+    font-weight: 600;
+    padding: 0.5rem 0.8rem;
+    border-radius: 6px;
+    transition: background 0.2s;
+}
+.navbar-menu a:hover,
+.navbar-menu a:focus {
+    background: rgba(121,201,8,0.12);
+}
+.has-dropdown:hover > .dropdown,
+.has-dropdown:focus-within > .dropdown {
+    display: block;
+}
+.dropdown {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background: rgb(45, 37, 8);
+    box-shadow: 0 8px 24px rgba(0,0,0,0.12);
+    border-radius: 0 0 8px 8px;
+    min-width: 160px;
+    z-index: 10;
+}
+.dropdown li {
+    width: 100%;
+}
+.dropdown a {
+    display: block;
+    padding: 0.6rem 1rem;
+    color: rgb(121, 201, 8);
+    border-radius: 0;
+}
+.dropdown a:hover {
+    background: rgba(121,201,8,0.18);
+}
+
+/* Hamburger styles */
+.navbar-toggle {
+    display: none;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0.5rem;
+    margin-left: 1rem;
+}
+.hamburger {
+    width: 28px;
+    height: 3px;
+    background: rgb(121, 201, 8);
+    display: block;
+    position: relative;
+}
+.hamburger::before,
+.hamburger::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    width: 28px;
+    height: 3px;
+    background: rgb(121, 201, 8);
+    transition: 0.2s;
+}
+.hamburger::before {
+    top: -8px;
+}
+.hamburger::after {
+    top: 8px;
+}
+
+/* Responsive nav */
+@media (max-width: 700px) {
+    .navbar-menu {
+        flex-direction: column;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background: rgb(45, 37, 8);
+        box-shadow: 0 8px 24px rgba(0,0,0,0.12);
+        display: none;
+    }
+    .navbar-menu.active {
+        display: flex;
+    }
+    .navbar-toggle {
+        display: block;
+    }
+}
+
 nav a {
     color: rgb(121, 201, 8);
     margin: 0 1rem;
