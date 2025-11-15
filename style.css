@@ -84,7 +84,7 @@ header {
     background: rgba(121,201,8,0.18);
 }
 
-/* Hamburger styles */
+
 .navbar-toggle {
     display: none;
     background: none;
@@ -117,7 +117,7 @@ header {
     top: 8px;
 }
 
-/* Responsive nav */
+
 @media (max-width: 700px) {
     .navbar-menu {
         flex-direction: column;
@@ -240,4 +240,34 @@ fieldset {
     border-radius: 12px;
     margin-bottom: 1rem;
     padding: 1rem;
+}
+
+.animais-lista {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
+  margin-top: 1.5rem;
+}
+.animal-card {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 16px rgba(21,74,5,0.08);
+  padding: 1rem;
+  width: 220px;
+  text-align: center;
+}
+.animal-card img {
+  width: 100%;
+  max-width: 160px;
+  border-radius: 8px;
+  margin-bottom: 0.7rem;
+}
+.animal-card h3 {
+  margin: 0.5rem 0 0.3rem 0;
+  color: rgb(36,122,10);
+}
+.animal-card p {
+  font-size: 0.98rem;
+  color: #444;
 }
