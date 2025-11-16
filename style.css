@@ -78,7 +78,7 @@ header {
     display: block;
     padding: 0.6rem 1rem;
     color: rgb(121, 201, 8);
-    border-radius: 0;
+    border-radius: 1rem;
 }
 .dropdown a:hover {
     background: rgba(121,201,8,0.18);
@@ -250,7 +250,7 @@ fieldset {
   margin-top: 1.5rem;
 }
 .animal-card {
-  background: #fff;
+  background: rgb(227, 216, 199);
   border-radius: 12px;
   box-shadow: 0 4px 16px rgba(21,74,5,0.08);
   padding: 1rem;
